@@ -1,0 +1,12 @@
+{
+  "name": "acelera-portal",
+  "version": "0.1.0",
+  "description": "Portal de ideias, roadmap e bugs da comunidade acelera.360 — fonte de demandas da fábrica autônoma.",
+  "type": "module",
+  "private": true,
+  "engines": { "node": ">=18" },
+  "scripts": {
+    "start": "node src/server.mjs",
+    "test": "node --test"
+  }
+}

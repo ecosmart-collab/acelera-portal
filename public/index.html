@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ideias e roadmap · acelera.360</title>
+  <meta name="description" content="Peça funcionalidades, vote nas que você mais quer e acompanhe cada uma na linha de montagem até a entrega.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topo">
+    <a class="marca" href="/">acelera<span>.360</span></a>
+    <div class="acoes">
+      <button class="botao botao-secundario" data-abrir="bug">Reportar bug</button>
+      <button class="botao botao-primario" data-abrir="ideia">Nova ideia</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="abertura">
+      <h1>Toda ideia entra na linha de montagem</h1>
+      <p>Peça uma funcionalidade e vote nas que você mais quer. Com <strong id="limiar">10</strong> votos, a ideia é aprovada e a fábrica começa a construir. Bugs entram direto.</p>
+    </section>
+
+    <section class="esteira" aria-label="Linha de montagem">
+      <ol class="estacoes" id="estacoes"></ol>
+    </section>
+
+    <section class="mural">
+      <div class="mural-barra">
+        <div class="abas" role="tablist">
+          <button role="tab" class="aba" aria-selected="true" data-tipo="ideia">Ideias</button>
+          <button role="tab" class="aba" aria-selected="false" data-tipo="bug">Bugs</button>
+        </div>
+        <label class="ordem">Ordenar por
+          <select id="ordem">
+            <option value="votos">Mais votadas</option>
+            <option value="recentes">Mais recentes</option>
+          </select>
+        </label>
+      </div>
+      <div class="filtros" id="filtros" aria-label="Filtrar por etapa"></div>
+      <ul class="lista" id="lista" aria-live="polite"></ul>
+    </section>
+  </main>
+
+  <dialog id="dialogo" aria-labelledby="dialogo-titulo">
+    <form id="formulario" novalidate>
+      <header class="dialogo-topo">
+        <h2 id="dialogo-titulo">Nova ideia</h2>
+        <button type="button" class="fechar" data-fechar aria-label="Fechar">×</button>
+      </header>
+      <p class="dialogo-ajuda" id="dialogo-ajuda"></p>
+      <input type="hidden" name="tipo">
+
+      <label class="campo">Título
+        <input name="titulo" maxlength="120" autocomplete="off">
+        <small class="erro" data-erro="titulo"></small>
+      </label>
+
+      <label class="campo">Descrição
+        <textarea name="descricao" rows="5" maxlength="5000"></textarea>
+        <small class="erro" data-erro="descricao"></small>
+      </label>
+
+      <div class="campo-linha">
+        <label class="campo">Categoria
+          <select name="categoria" id="categorias"></select>
+        </label>
+        <label class="campo">Seu nome
+          <input name="autor" maxlength="60" autocomplete="name">
+        </label>
+      </div>
+
+      <label class="campo" data-so-bug>Página onde aconteceu
+        <input name="pagina" type="url" inputmode="url">
+        <small class="erro" data-erro="pagina"></small>
+      </label>
+
+      <p class="erro erro-geral" id="erro-geral" role="alert"></p>
+      <footer class="dialogo-rodape">
+        <button type="button" class="botao botao-secundario" data-fechar>Cancelar</button>
+        <button type="submit" class="botao botao-primario" id="enviar">Enviar ideia</button>
+      </footer>
+    </form>
+  </dialog>
+
+  <div class="aviso" id="aviso" role="status" hidden></div>
+  <script type="module" src="app.js"></script>
+</body>
+</html>

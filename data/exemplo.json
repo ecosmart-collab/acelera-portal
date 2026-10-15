@@ -1,0 +1,53 @@
+{
+  "seq": 6,
+  "itens": [
+    {
+      "id": "1", "tipo": "ideia", "categoria": "IA & Agentes", "autor": "Raphael",
+      "titulo": "Configurar o CRM do cliente a partir do nicho já mapeado",
+      "descricao": "Hoje, para deixar a IA pronta para atender, preenchemos à mão o perfil da empresa, o texto do Sobre, o catálogo de serviços e a memória do negócio. Uma skill poderia fazer isso a partir do nicho.",
+      "pagina": "", "votantes": ["v-exemplo-01", "v-exemplo-02", "v-exemplo-03", "v-exemplo-04", "v-exemplo-05", "v-exemplo-06", "v-exemplo-07", "v-exemplo-08"],
+      "status": "em-votacao", "fabricaId": null, "criadoEm": "2026-09-20T12:00:00.000Z", "atualizadoEm": "2026-09-20T12:00:00.000Z",
+      "historico": [{ "status": "em-votacao", "em": "2026-09-20T12:00:00.000Z" }]
+    },
+    {
+      "id": "2", "tipo": "ideia", "categoria": "Conteúdo", "autor": "Admin",
+      "titulo": "Baixar a transcrição das aulas",
+      "descricao": "Permitir baixar a transcrição de todas as aulas para ajudar quem prefere estudar lendo.",
+      "pagina": "", "votantes": ["v-exemplo-01", "v-exemplo-02", "v-exemplo-03", "v-exemplo-04", "v-exemplo-05", "v-exemplo-06", "v-exemplo-07"],
+      "status": "em-votacao", "fabricaId": null, "criadoEm": "2026-08-15T12:00:00.000Z", "atualizadoEm": "2026-08-15T12:00:00.000Z",
+      "historico": [{ "status": "em-votacao", "em": "2026-08-15T12:00:00.000Z" }]
+    },
+    {
+      "id": "3", "tipo": "ideia", "categoria": "Integrações", "autor": "Samira",
+      "titulo": "Integrar o Galeed ao portal",
+      "descricao": "Seria possível trazer o Galeed para dentro da plataforma, sem precisar trocar de aba?",
+      "pagina": "", "votantes": ["v-exemplo-01", "v-exemplo-02", "v-exemplo-03", "v-exemplo-04", "v-exemplo-05", "v-exemplo-06", "v-exemplo-07", "v-exemplo-08", "v-exemplo-09", "v-exemplo-10"],
+      "status": "em-desenvolvimento", "fabricaId": null, "criadoEm": "2026-09-01T12:00:00.000Z", "atualizadoEm": "2026-10-10T12:00:00.000Z",
+      "historico": [{ "status": "em-votacao", "em": "2026-09-01T12:00:00.000Z" }, { "status": "aprovada-para-dev", "em": "2026-10-02T12:00:00.000Z" }, { "status": "em-desenvolvimento", "em": "2026-10-10T12:00:00.000Z" }]
+    },
+    {
+      "id": "4", "tipo": "ideia", "categoria": "IA & Agentes", "autor": "Ivan",
+      "titulo": "Mentor AI indicando as aulas gravadas",
+      "descricao": "Quando o Mentor responder uma dúvida, indicar a aula gravada que aprofunda o assunto, com o minuto exato.",
+      "pagina": "", "votantes": ["v-exemplo-01", "v-exemplo-02", "v-exemplo-03", "v-exemplo-04", "v-exemplo-05"],
+      "status": "entregue", "fabricaId": null, "criadoEm": "2026-07-10T12:00:00.000Z", "atualizadoEm": "2026-09-28T12:00:00.000Z",
+      "historico": [{ "status": "em-votacao", "em": "2026-07-10T12:00:00.000Z" }, { "status": "entregue", "em": "2026-09-28T12:00:00.000Z" }]
+    },
+    {
+      "id": "5", "tipo": "ideia", "categoria": "Plataforma", "autor": "André",
+      "titulo": "Apagar informações da memória do Mentor",
+      "descricao": "O Mentor faz inferências que devem ser desconsideradas. Quero poder apagar itens específicos da memória.",
+      "pagina": "", "votantes": ["v-exemplo-01", "v-exemplo-02", "v-exemplo-03", "v-exemplo-04"],
+      "status": "em-votacao", "fabricaId": null, "criadoEm": "2026-09-05T12:00:00.000Z", "atualizadoEm": "2026-09-05T12:00:00.000Z",
+      "historico": [{ "status": "em-votacao", "em": "2026-09-05T12:00:00.000Z" }]
+    },
+    {
+      "id": "6", "tipo": "bug", "categoria": "Plataforma", "autor": "Carla",
+      "titulo": "Botão salvar não responde no pipeline",
+      "descricao": "Ao editar um card no pipeline e clicar em salvar, nada acontece. Recarregando a página, a alteração não ficou salva.",
+      "pagina": "https://app.exemplo.com/pipeline", "votantes": [],
+      "status": "aprovada-para-dev", "fabricaId": null, "criadoEm": "2026-10-14T12:00:00.000Z", "atualizadoEm": "2026-10-14T12:00:00.000Z",
+      "historico": [{ "status": "aprovada-para-dev", "em": "2026-10-14T12:00:00.000Z" }]
+    }
+  ]
+}
